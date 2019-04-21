@@ -1,0 +1,18 @@
+body{
+    background-color: orange;
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+#end{
+    margin-bottom: 15px;
+}
+
+#top{
+    margin-top: 15px;
+}

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12" id="top">
+        <img src="/assets/image/cartoon-hamburger.jpg">
+        <h1>Burger Machine</h1>
+        <h3>The virtual burger eating dream!</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        {{#each data}}
+        {{#unless devoured}}
+            <h3>{{id}}. {{burger_name}}</h3>
+            <button type="button" class="btn btn-danger eat" data-id={{id}}>Devour!</button>
+        {{/unless}}
+        {{/each}}
+    </div>
+    <div class="col-md-6">
+        {{#each data}}
+        {{#if devoured}}
+            <strike><h3 class="devour">{{id}}. {{burger_name}}</h3></strike>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <form id="end">
+            <input type="text" name="name" id="burger_name">
+            <button type="button" id="add" class="btn btn-info">Add Burger</button>
+        </form>
+    </div>
+</div>
